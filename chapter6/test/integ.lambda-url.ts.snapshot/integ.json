@@ -1,0 +1,25 @@
+{
+  "version": "41.0.0",
+  "testCases": {
+    "LambdaUrlTest/DefaultTest": {
+      "stacks": [
+        "Chapter6LambdaStack"
+      ],
+      "cdkCommandOptions": {
+        "deploy": {
+          "args": {
+            "rollback": false
+          }
+        },
+        "destroy": {
+          "args": {
+            "force": true
+          }
+        }
+      },
+      "assertionStack": "LambdaUrlTest/DefaultTest/DeployAssert",
+      "assertionStackName": "LambdaUrlTestDefaultTestDeployAssert036AD385"
+    }
+  },
+  "minimumCliVersion": "2.1005.0"
+}

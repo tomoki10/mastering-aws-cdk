@@ -1,0 +1,20 @@
+{
+  "version": "41.0.0",
+  "files": {
+    "511ad7ed2039360f0f6e640eee29a46445fc79f66adf1de9762434518189e31a": {
+      "displayName": "Chapter6LambdaStack Template",
+      "source": {
+        "path": "Chapter6LambdaStack.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "current_account-current_region": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "511ad7ed2039360f0f6e640eee29a46445fc79f66adf1de9762434518189e31a.json",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}

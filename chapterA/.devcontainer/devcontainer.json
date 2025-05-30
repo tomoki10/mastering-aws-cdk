@@ -1,0 +1,15 @@
+{
+  "name": "AWS CDK",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "mounts": [
+    {"source": "${localEnv:HOME}/.aws", "target": "/home/node/.aws","type": "bind"}
+  ],
+  "runArgs": ["--platform=linux/arm64"],
+  "features": {
+    "ghcr.io/devcontainers/features/aws-cli:1": {},
+    "ghcr.io/devcontainers-contrib/features/aws-cdk:2": {}
+  },
+  "postCreateCommand": ""
+}
