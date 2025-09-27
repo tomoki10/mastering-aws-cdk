@@ -10,12 +10,6 @@ export class Chapter4Stack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
-    new lambdaNodeJs.NodejsFunction(this, 'SampleLambda', {
-      entry: 'src/index.ts',
-      handler: 'handler',
-      runtime: lambda.Runtime.NODEJS_LATEST,
-    });
-
     const table = new dynamodb.TableV2(this, 'SampleTable', {
       partitionKey: { name: 'id', type: dynamodb.AttributeType.STRING },
       billing: dynamodb.Billing.onDemand(),
