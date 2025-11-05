@@ -16,7 +16,7 @@ cdk bootstrap aws://123456789012/ap-northeast-1
 - P.12 把握することを難しくなります。 → 把握することが難しくなります。
 - P.15 AWS CDK を生まれました。 → AWS CDK が生まれました。
 - P.82 AWS 予約アドレス� → AWS 予約アドレス（特殊文字の誤表示）
-- P.118 新鋭 → 申請
+- P.118 新鋭 → 申請、エンドポインㇳ→エンドポイント
 - P.124 Eventbridge Schedule → EventBridge Scheduler
 - P.124 DynamoDB Stream → DynamoDB Streams
 - P.140 パブリックリポジトリ出ない場合 → パブリックリポジトリではない場合
